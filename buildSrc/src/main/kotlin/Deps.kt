@@ -19,13 +19,13 @@ object Versions {
     val kotlinCoroutines = "1.3.2-1.3.60-eap-76"
     val timber = "5.0.0-SNAPSHOT"
     val oshi = "3.12.0"
-    val kotlin = "1.3.60"
+    val kotlin = "1.3.61"
     val ktor = "1.1.1"
     val kotlinSerialization = "0.11.1"
     val nodePlugin = "1.3.0"
     val dokkaPlugin = "0.9.18"
 
-    val kotlinBigNumVersion = "0.1.3-SNAPSHOT"
+    val kotlinBigNumVersion = "0.1.5-SNAPSHOT"
 
 
 }
