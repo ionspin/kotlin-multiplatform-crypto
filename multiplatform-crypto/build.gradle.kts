@@ -144,13 +144,13 @@ kotlin {
         }
     }
 
-//    mingwX86() {
-//        binaries {
-//            staticLib {
-//
-//            }
-//        }
-//    }
+    mingwX86() {
+        binaries {
+            staticLib {
+
+            }
+        }
+    }
 
     linuxArm32Hfp() {
         binaries {
@@ -275,16 +275,16 @@ kotlin {
             dependsOn(nativeTest)
         }
 
-//        val mingwX86Main by getting {
-//            dependsOn(commonMain)
-//            dependencies {
-//                implementation(Deps.Native.coroutines)
-//            }
-//        }
-//
-//        val mingwX86Test by getting {
-//            dependsOn(commonTest)
-//        }
+        val mingwX86Main by getting {
+            dependsOn(commonMain)
+            dependencies {
+                implementation(Deps.Native.coroutines)
+            }
+        }
+
+        val mingwX86Test by getting {
+            dependsOn(commonTest)
+        }
 
         val mingwX64Main by getting {
             dependsOn(commonMain)
@@ -311,6 +311,9 @@ kotlin {
 
         val linuxArm64Test by getting {
             dependsOn(nativeTest)
+        }
+        all {
+            languageSettings.enableLanguageFeature("InlineClasses")
         }
     }
 
