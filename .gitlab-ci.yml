@@ -4,12 +4,18 @@ buildLinux:
     - env
   tags:
     - linuxX64
+  only:
+    - master
 buildMac:
   script: echo TEST_PULL_REQUEST_MAC
   tags:
     - macos
+  only:
+    - master
 buildWindows:
   script: echo TEST_PULL_REQUEST_WIN
   tags:
     - windowsX64
+  only:
+    - master
 
