@@ -1,2 +1,13 @@
-build:
-  script: echo TEST_PULL_REQUEST
+buildLinux:
+  script: echo TEST_PULL_REQUEST_LINUX
+  tags:
+    - linuxX64
+buildMac:
+  script: echo TEST_PULL_REQUEST_MAC
+  tags:
+    - macos
+buildWindows:
+  script: echo TEST_PULL_REQUEST_WIN
+  tags:
+    - windowsX64
+
