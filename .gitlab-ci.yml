@@ -1,2 +1,2 @@
 build:
-  script: echo TEST
+  script: echo TEST_PULL_REQUEST
