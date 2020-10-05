@@ -11,7 +11,7 @@ workflow:
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-#This will fail if build.gradle.kts is invalid
+
 simpleCheck:
   stage: prepare
   script: ./gradlew tasks
