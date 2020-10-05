@@ -50,7 +50,7 @@ fun KotlinMultiplatformExtension.isNotRunningInIdea(block: KotlinMultiplatformEx
 }
 
 fun KotlinMultiplatformExtension.isRunningInGitlabCi(block: KotlinMultiplatformExtension.() -> Unit) {
-    if (isInTravis()) {
+    if (isInGitlabCi()) {
         block(this)
     }
 }
