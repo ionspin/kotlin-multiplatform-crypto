@@ -1,6 +1,7 @@
 buildLinux:
   script:
     - echo TEST_PULL_REQUEST_LINUX
+    - env
     - ./linuxBuild.sh
   tags:
     - linuxX64

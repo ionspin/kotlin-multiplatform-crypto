@@ -57,7 +57,7 @@ version = ReleaseInfo.version
 
 val ideaActive = isInIdea()
 println("Idea active: $ideaActive")
-
+// Change this to support running on selected primary OS (like in bignum)
 root_runningOnLinuxx86_64 {
     android {
         compileSdkVersion(29)
