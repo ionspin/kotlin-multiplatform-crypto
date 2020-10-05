@@ -13,6 +13,7 @@ import java.io.File
  */
 fun isInIdea() = System.getProperty("idea.active") == "true"
 
+
 fun isInGitlabCi() = System.getenv("GITLAB_CI") == "true"
 
 fun getProjectPath() : String {
