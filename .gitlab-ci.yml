@@ -1,23 +1,41 @@
+stages:
+  - prepare
+  - build
+  - deploy
+
 workflow:
   rules:
-    # - if: $CI_EXTERNAL_PULL_REQUEST_IID # disable pull requests for now
+    - if: $CI_EXTERNAL_PULL_REQUEST_IID
     - if: $CI_COMMIT_TAG
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
+#This will fail if build.gradle.kts is invalid
+simpleCheck:
+  stage: prepare
+  script: ./gradlew tasks
 
 buildLinux:
+  stage: build
+  when: manual
+  allow_failure: false
   script:
     - echo TEST_PULL_REQUEST_LINUX
     - ./linuxBuild.sh
   tags:
     - linuxX64
 buildMac:
+  stage: build
+  when: manual
+  allow_failure: false
   script: echo TEST_PULL_REQUEST_MAC
   tags:
     - macos
 buildWindows:
+  stage: build
+  when: manual
+  allow_failure: false
   script: echo TEST_PULL_REQUEST_WIN
   tags:
     - windowsX64
