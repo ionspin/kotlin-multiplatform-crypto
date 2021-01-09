@@ -11,7 +11,5 @@ cd ..
 ./gradlew multiplatform-crypto-delegated:macosX64MainKlibrary multiplatform-crypto-delegated:macosX64TestKlibrary
 ./gradlew multiplatform-crypto-delegated:macosX64Test
 
-./gradlew multiplatform-crypto-libsodium-bindings:macosX64MainKlibrary multiplatform-crypto-libsodium-bindings:macosX64TestKlibrary
-./gradlew multiplatform-crypto-libsodium-bindings:macosX64Test
 set +e
 

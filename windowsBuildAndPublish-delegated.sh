@@ -15,7 +15,5 @@ cd ..
 ./gradlew --no-daemon multiplatform-crypto-delegated:build || exit 1
 ./gradlew --no-daemon multiplatform-crypto-delegated:publishMingwX64PublicationToSnapshotRepository || exit 1
 
-./gradlew --no-daemon multiplatform-crypto-libsodium-bindings:build || exit 1
-./gradlew --no-daemon multiplatform-crypto-libsodium-bindings:publishMingwX64PublicationToSnapshotRepository || exit 1
 exit 0
 

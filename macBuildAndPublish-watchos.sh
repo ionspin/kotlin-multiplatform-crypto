@@ -11,7 +11,4 @@ cd ..
 multiplatform-crypto-delegated:publishWatchosArm64PublicationToSnapshotRepository \
 multiplatform-crypto-delegated:publishWatchosX86PublicationToSnapshotRepository
 
-./gradlew multiplatform-crypto-libsodium-bindings:publishWatchosArm32PublicationToSnapshotRepository \
-multiplatform-crypto-libsodium-bindings:publishWatchosArm64PublicationToSnapshotRepository \
-multiplatform-crypto-libsodium-bindings:publishWatchosX86PublicationToSnapshotRepository
 set +e

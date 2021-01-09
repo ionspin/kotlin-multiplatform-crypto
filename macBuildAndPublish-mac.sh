@@ -9,5 +9,4 @@ cd sodiumWrapper
 cd ..
 ./gradlew multiplatform-crypto-delegated:publishMacosX64PublicationToSnapshotRepository
 
-./gradlew multiplatform-crypto-libsodium-bindings:publishMacosX64PublicationToSnapshotRepository
 set +e
