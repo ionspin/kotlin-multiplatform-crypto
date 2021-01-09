@@ -12,7 +12,4 @@ cd ..
 multiplatform-crypto-delegated:publishIosArm64PublicationToSnapshotRepository \
 multiplatform-crypto-delegated:publishIosX64PublicationToSnapshotRepository
 
-./gradlew multiplatform-crypto-libsodium-bindings:publishIosArm32PublicationToSnapshotRepository \
-multiplatform-crypto-libsodium-bindings:publishIosArm64PublicationToSnapshotRepository \
-multiplatform-crypto-libsodium-bindings:publishIosX64PublicationToSnapshotRepository
 set +e

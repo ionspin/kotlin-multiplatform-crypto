@@ -38,6 +38,5 @@ rootProject.name = "KotlinMultiplatformCrypto"
 include("multiplatform-crypto-api")
 include("multiplatform-crypto")
 include("multiplatform-crypto-delegated")
-include("multiplatform-crypto-libsodium-bindings")
-include("sample")
+//include("sample") //TODO Rewrite sample to use crypto instead of libsodium bindings
 

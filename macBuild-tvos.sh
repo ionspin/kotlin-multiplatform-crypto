@@ -11,7 +11,4 @@ cd ..
 multiplatform-crypto-delegated:tvosX64MainKlibrary multiplatform-crypto-delegated:tvosX64TestKlibrary
 ./gradlew multiplatform-crypto-delegated:tvosX64Test
 
-./gradlew multiplatform-crypto-libsodium-bindings:tvosArm64MainKlibrary multiplatform-crypto-libsodium-bindings:tvosArm64TestKlibrary \
-multiplatform-crypto-libsodium-bindings:tvosX64MainKlibrary multiplatform-crypto-libsodium-bindings:tvosX64TestKlibrary
-./gradlew multiplatform-crypto-libsodium-bindings:tvosX64Test
 set +e
