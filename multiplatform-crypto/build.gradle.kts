@@ -392,25 +392,6 @@ task<Copy>("copyPackageJson") {
 
 tasks {
 
-
-    create<Jar>("javadocJar") {
-        dependsOn(dokkaJavadoc)
-        archiveClassifier.set("javadoc")
-        from(dokkaJavadoc.get().outputDirectory)
-    }
-
-    dokkaJavadoc {
-        println("Dokka !")
-        dokkaSourceSets {
-            named("commonMain") {
-                displayName.set("common")
-                platform.set(Platform.common)
-            }
-        }
-
-
-
-    }
     if (getHostOsName() == "linux" && getHostArchitecture() == "x86-64") {
 
         val jvmTest by getting(Test::class) {

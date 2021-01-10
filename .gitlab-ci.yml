@@ -53,7 +53,6 @@ macPublishToSnapshot:
   stage: deploy
   script:
     - ./macBuild.sh
-    - ./macBuildAndPublishSnapshot-bindings.sh
     - ./macBuildAndPublishSnapshot-delegated.sh
   only:
     - master
